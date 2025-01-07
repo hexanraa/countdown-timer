@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 id="school">HIRIYA SCHOOL</h1>
+        <p id="motto">Excel and Exemplify</p>
+      </div>
+      <div id="current-time">
+        <p id="rtime"></p>
+        <p id="rdate"></p>
+      </div>
+    </header>
+    <div id="main-text">
+      <h2 id="title">SSC & IGCSE</h2>
+      <p id="title-date">MAY / JUNE 2025</p>
+    </div>
+    <div class="container">
+      <div class="container-segment">
+        <div class="segment-title">Days</div>
+        <div class="segment">
+          <div class="flip-card" data-days-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-days-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-segment">
+        <div class="segment-title">Hours</div>
+        <div class="segment">
+          <div class="flip-card" data-hours-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-hours-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-segment">
+        <div class="segment-title">Minutes</div>
+        <div class="segment">
+          <div class="flip-card" data-minutes-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-minutes-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-segment">
+        <div class="segment-title">Seconds</div>
+        <div class="segment">
+          <div class="flip-card" data-seconds-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-seconds-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
