@@ -11,13 +11,18 @@ setInterval(() => {
   realTimeEl.textContent = `${currentDate.toLocaleTimeString("en-GB")}`;
 }, 250);
 
-const countToDate = new Date("April 17, 2025 07:00:00");
+const countToDate = new Date("April 19, 2025 07:00:00");
 let previousTimeBetweenDates;
 
 setInterval(() => {
   const currentDate = new Date();
   const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000);
-  flipAllCards(timeBetweenDates);
+
+  if (timeBetweenDates < 0) {
+    flipAllCards(0);
+  } else {
+    flipAllCards(timeBetweenDates);
+  }
 
   previousTimeBetweenDates = timeBetweenDates;
 }, 250);
